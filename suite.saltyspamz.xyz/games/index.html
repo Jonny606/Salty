@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Salty's Games</title>
+    <link rel="icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="Description" content="Salty's Unblocked Games. Access over 150 unique games for Windows and Chromebook!">
+    <meta name="keywords" content="unblocked games, games for school, online games, free unblocked games, unblocked games for chromebook, chromebook games 2025">
+    <meta name="author" content="Salty Spamz">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ceecf0ab09.js" crossorigin="anonymous"></script>
+
+
+    <!-- IMPORTS START -->
+
+
+
+    <!-- Hotjar Tracking Code for https://saltyspamz.xyz -->
+    <script>
+        (function(h, o, t, j, a, r) {
+            h.hj = h.hj || function() {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 2817673,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHCD9FX0ZE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DHCD9FX0ZE');
+    </script>
+
+
+    <!-- Event snippet for Website traffic conversion page -->
+    <script>
+        gtag('event', 'conversion', {
+            'send_to': 'AW-586736454/pxGHCN_Hl40YEMbG45cC'
+        });
+    </script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- Smartsupp Live Chat script -->
+    <script type="text/javascript">
+        var _smartsupp = _smartsupp || {};
+        _smartsupp.key = 'b8f45dc5045076e7949c3726ba99f76c23deb742';
+        window.smartsupp || (function(d) {
+            var s, c, o = smartsupp = function() {
+                o._.push(arguments)
+            };
+            o._ = [];
+            s = d.getElementsByTagName('script')[0];
+            c = d.createElement('script');
+            c.type = 'text/javascript';
+            c.charset = 'utf-8';
+            c.async = true;
+            c.src = 'https://www.smartsuppchat.com/loader.js?';
+            s.parentNode.insertBefore(c, s);
+        })(document);
+    </script>
+
+
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
+
+
+
+    <!-- IMPORTS END -->
+
+</head>
+
+
+
+
+
+<body style="text-align: center; font-size: 21px; font-family: Roboto Condensed">
+
+    <header class="photon-toolbar variant-float position-top color-none size-normal">
+        <div class="photon-toolbartitle">
+            <a id="cornertitle" href="/games">Salty's Games</a>
+        </div>
+        <div class="search" style="display: block;">
+            <div class="photon-input type-text variant-filled color-none">
+                <input tabindex="0" type="text" id="searchbar" name="search" placeholder="Search for a game..." onclick='closeAdvanced()' style="padding-left: 48px;" class="" data-hj-allow>
+                <span class="prefix">search</span>
+                <label for="searchbar" style="margin-left: 48px;">&nbsp;</label>
+                <div class="bar transitioning" style="opacity: 0; width: calc(100% - 2px); left: 1px;"></div>
+
+
+            </div>
+            <i id="arrow-down" class="fa-solid fa-angles-down" style="position: relative; top: -60px; left: 270px; cursor: pointer"></i>
+
+            <div id="advanced-search-panel" class="" style="background: #18191c; position: relative; top: -43px; left: 230px; width: 300px; opacity: 0;">
+                <input type="checkbox" id="exactSearch" name="exactSearch" value="Exact">
+                <label for="exactSearch"> Exact matches only</label><br>
+                <!--
+                   TO DO:
+                       arrow icon flip Y animation
+                       animated panel
+               -->
+            </div>
+
+        </div>
+    </header>
+
+    <div class="alert" id="alert" style="display: none;">
+        <br><br>
+        <span id="closebtn" class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> Error
+    </div>
+
+    <br><br><br><br>
+
+    <h1 class="h1-games" style="margin-bottom: 0">Games</h1>
+
+
+    <span class="badge" style=" margin-bottom: 400px;"><a id="totalgames" style="color: #2f3136 !important">0</a> Games</span>
+    <br><br>
+    <span id="quote" style="font-size: 25px; display:none">"there's no quote today :("</span>
+    <span style="font-size: 25px;">View our collection of non-copyright and fan-made games below</span>
+    <br><br><br>
+
+    <!-- Dark mode toggle logic -->
+    <script>
+        var app = document.getElementsByTagName("BODY")[0];
+        if (localStorage.lightMode == "dark") {
+            app.setAttribute("light-mode", "dark");
+        }
+    </script>
+
+
+    <!-- Dark mode toggle -->
+    <div class="container">
+        <h1 style="margin-bottom: -5px; font-size: 30px">Dark Mode</h1>
+        <button class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+			<span></span>
+			<span></span>
+		</button>
+    </div>
+    <br>
+
+
+    <!--
+     <div class="filter">
+          <h4 style="margin-bottom: 1px">Filter Games:</h4>
+          <select id="gamefilter" name="filter" onchange="filterGames(this.value);" style="height: 30px; width: 120px; font-size: 15px; ";><!-- box-shadow: 0 0 20px 3px #48abe0;">--/>
+               <option value="1">All Games</option> 
+               <option value="2">Popular Only</option>
+          </select>
+     </div>-->
+
+
+    <div class="beta">
+
+        <br>
+        <span class="badge" style=" margin-bottom: 400px;"><a id="totalgames1" style="color: #2f3136 !important">0</a></span>
+
+
+
+        <div class="flex-container" id="randomGame" style="margin-bottom: -30px; margin-top: 10px">
+            <!-- Where random game card is placed -->
+            <div id="random-game">
+                <div class="card-small">
+                    <h1 class="card-title" style="color: black; margin-bottom: -0px;">?</h1>
+                    <button id="openRandomGame" class="white" onclick="randomGame()">Random Game</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div style="position:relative">
+        <!-- Not sure why but this puts adrail ads in the correct position -->
+        <div class="adrail" id="adrailL" style="margin-left: 20px; margin-top: 60px; width: 200px; position: absolute;top: 0;right: 0;bottom: 0;left: 0; overflow: hidden;">
+            <!-- Where adrail L ads are placed -->
+        </div>
+
+        <div class="adrail" id="adrailR" style="margin-right: 20px; margin-top: 60px; width: 200px; position: absolute;top: 0;right: 0;bottom: 0; overflow: hidden;">
+            <!-- Where adrail R ads are placed -->
+        </div>
+
+
+        <div class="flex-container" id="gamesList">
+            <!-- Where game cards are placed -->
+        </div>
+
+    </div>
+    </div>
+
+    <p style="font-size: 30px; text-align: center;">Leave a comment or need help? <a href="mailto:help@saltyspamz.xyz">help@saltyspamz.xyz</a>.</p>
+
+
+    <div>
+        <a>Page Views:<br><img src="https://www.free-website-hit-counter.com/c.php?d=7&amp;id=149187&amp;s=16" alt="Page View Counter"></a>
+        <br>
+        <p style="font-size: 17px; margin-top: -7px; margin-left: auto; margin-right: auto;">as of 19/4/23</p>
+    </div>
+
+
+
+    <!-- SCRIPT IMPORTS START -->
+    <script src="ftchgms1.js"></script>
+    <script src="scr1.js"></script>
+    <script src="trck1.js"></script>
+
+    <script src="/chkbn.js"></script>
+    <!-- SCRIPT IMPORTS END -->
+</body>
+
+</html>

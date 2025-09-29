@@ -1,0 +1,9 @@
+
+
+
+
+
+/games
+warning
+Some games are currently unplayable on mobile. Working on a fix.
+true
